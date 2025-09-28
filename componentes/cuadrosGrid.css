@@ -1,0 +1,60 @@
+.Contenedor {
+    width: auto;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    border: 1px solid black;
+}
+
+.caja {
+    width: auto;
+    height: 200px;
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bolder;
+    font-family: sans-serif;
+
+    /* Opcional y más diseño */
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 5px 5px rgb(117, 110, 110);
+}
+
+.uno {
+    background-color: red;
+    grid-column: 1/3;
+}
+
+.dos {
+    height: auto;
+    background-color: aqua;
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.tres {
+    background-color: yellow;
+}
+
+.cuatro {
+    background-color: green;
+}
+
+.cinco {
+    height: auto;
+    background-color: blue;
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+
+.diez {
+    border: none;
+    box-shadow: none;
+}
